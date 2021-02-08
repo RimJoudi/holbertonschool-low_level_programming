@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <holberton.h>
+#include"holberton.h"
+
 /**
  * main - Entry point
  *
@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-_ putchar('H');
-_ putchar('o');
-_ putchar('l');
-_ putchar('b');
-_ putchar('e');
-_ putchar('r');
-_ putchar('t');
-_ putchar('o');
-_ putchar('n');
-_ putchar('\n');
+_putchar('H');
+_putchar('o');
+_putchar('l');
+_putchar('b');
+_putchar('e');
+_putchar('r');
+_putchar('t');
+_putchar('o');
+_putchar('n');
+_putchar('\n');
 return (0);
-};
+}
