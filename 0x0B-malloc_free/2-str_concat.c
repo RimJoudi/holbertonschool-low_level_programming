@@ -27,13 +27,13 @@ char *str_concat(char *s1, char *s2)
 		for (j = 0; s2[j]; j++)
 		continue;
 	}
-p = malloc(sizeof(char) * i + j + 1);
-if (p == NULL)
-return (NULL);
-for (k = 0; k < i; k++)
-p[k] = s1[k];
-for (k = 0; k < j; k++)
-p[k + i] = s2[k];
-p[k + j] = '\0';
-return (p);
+	p = malloc(sizeof(char) * (i + j + 1));
+	if (p == NULL)
+		return (NULL);
+	for (k = 0; k < i; k++)
+		p[k] = s1[k];
+	for (k = 0; k < j; k++)
+		p[k + i] = s2[k];
+	p[k + j] = '\0';
+	return (p);
 }
