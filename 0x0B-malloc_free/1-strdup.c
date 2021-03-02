@@ -13,9 +13,6 @@ char *_strdup(char *str)
 	char *s;
 
 	for (i = 0; str[i] != '\0'; i++)
-	{
-		continue;
-	}
 	if (str == NULL)
 		return (0);
 
