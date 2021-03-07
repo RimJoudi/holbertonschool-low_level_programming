@@ -23,7 +23,7 @@ p[i] = malloc(width * sizeof(int));
 if (p[i] == NULL)
 {
 for (k = 0; k < i; k++)
-free(p[i]);
+free(p[k]);
 free(p);
 return (NULL);
 }
