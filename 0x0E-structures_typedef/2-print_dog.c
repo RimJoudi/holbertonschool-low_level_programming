@@ -19,6 +19,6 @@ printf("my_dog.age = %f\n", d->age);
 if (d->owner == NULL)
 printf("owner : (nil)");
 else
-printf(" my_dog.owner = %s\n", d->owner);
+printf("my_dog.owner = %s\n", d->owner);
 }
 }
