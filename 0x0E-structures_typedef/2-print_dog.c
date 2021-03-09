@@ -14,11 +14,11 @@ else
 if (d->name == NULL)
 printf("Name : (nil)");
 else
-printf("my_dog.name = %s", d->name);
-printf("my_dog.age = %f", d->age);
+printf("my_dog.name = %s\n", d->name);
+printf("my_dog.age = %f\n", d->age);
 if (d->owner == NULL)
 printf("owner : (nil)");
 else
-printf(" my_dog.owner = %s", d->owner);
+printf(" my_dog.owner = %s\n", d->owner);
 }
 }
