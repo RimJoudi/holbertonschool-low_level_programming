@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
+void __attribute__((constructor)) f_print(void);
 
 /**
  * f_print - prints a sentence before the main function is executed.
