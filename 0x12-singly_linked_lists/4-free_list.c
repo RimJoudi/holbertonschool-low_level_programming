@@ -15,8 +15,8 @@ list_t *store;
 while (head != NULL)
 {
 store = head->next;
-free(head);
 free(head->str);
+free(head);
 head = store;
 }
 }
