@@ -10,11 +10,12 @@
  */
 void free_listint(listint_t *head)
 {
-listint_t *store;
-while (store != NULL)
-{
-store = head->next;
-free(head);
-head = store;
-}
+	listint_t *store;
+
+	while (store != NULL)
+	{
+		store = head->next;
+		free(head);
+		head = store;
+	}
 }
