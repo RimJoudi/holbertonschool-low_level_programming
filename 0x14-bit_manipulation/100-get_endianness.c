@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * get_endianness - converts a binary number to an unsigned int.
+ * get_endianness - checks the endianness.
  *
  * Returns: 0 if big endian otherwise 1 if little endian.
  */
