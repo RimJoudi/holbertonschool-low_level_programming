@@ -1,2 +1,2 @@
-!#bin/bash
+#!bin/bash
 sysctl -a | grep "pid_max"
