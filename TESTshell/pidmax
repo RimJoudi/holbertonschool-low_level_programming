@@ -1,1 +1,1 @@
-sysctl -a | grep "pid_max"
+cat /proc/sys/kernel/pid_max
