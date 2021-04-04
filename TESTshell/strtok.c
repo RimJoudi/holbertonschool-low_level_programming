@@ -4,26 +4,21 @@
 #include <string.h>
 /**
  *main - main test
- *@ac: integer
- *@av: char
+ *
  *Return: Always 0.
  */
 
-int main(int ac, char **av)
+int main(void)
 {
-	int i;
 	char *token;
 	char str[50] = "Hello Rym";
 
-	for(i = 0; av[i] != av[ac]; i++)
+	token = strtok(str, " ");	//extracting the 1st token
+	while (token != NULL)		//loop through str to get the other tokens
 	{
-		token = strtok(str, " ");	//extracting the 1st token
-		while (token != NULL)		//loop through str to get the other tokens
-		{
-			printf("%s\n", token);	//print each token
-			token = strtok(NULL, " ");
-		}
-	}	
+		printf("%s\n", token);	//print each token
+		token = strtok(NULL, " ");	//passes to the next token
+	}
 
 	return (0);
 }
