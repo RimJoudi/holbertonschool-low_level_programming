@@ -7,27 +7,36 @@
  *@av: char
  *Return: Always 0.
  */
-
-int main(int ac, char **av)
+void *Readl(void);
+int main(void)
 {
-
-	char *buff;
-	size_t size = 0;
-		
-	buff = malloc(sizeof(char) * size + 1);
-	if (buff == NULL)
-		return (0);
-
-	for(; av[size] != av[ac]; size++)
+	int i = 0;
+	while (i < 1)
 	{
 		printf("$ ");
-		while (getline(&buff, &size, stdin) != EOF)
-		{
-			printf("$ %s\n", buff);
-		}
+		Readl();
 	}
-
-	free(buff);
-
 	return (0);
+}
+
+
+
+
+
+
+void *Readl(void)
+{
+
+	char *buff = NULL;
+	size_t size = 0;
+	ssize_t read;
+		
+	read = (getline(&buff, &size, stdin));
+	if (read == -1)
+	{
+		free(buff);
+		exit(0);
+	}
+	
+	return(buff);
 }
