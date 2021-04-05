@@ -18,9 +18,7 @@ int main (void)
 
 		else if (id > 0)
 		{
-
 			wait(NULL);
-
 		}
 
 		else if (id == 0)
