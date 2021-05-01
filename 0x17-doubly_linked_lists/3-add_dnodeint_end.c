@@ -1,6 +1,5 @@
 #include "lists.h"
 /**
- * main - check the code for Holberton School students.
  * add_dnodeint_end - adds a new node at the end of a dlistint_t list.
  **@head: pointer to dlistint_t list.
  *@n: int.
