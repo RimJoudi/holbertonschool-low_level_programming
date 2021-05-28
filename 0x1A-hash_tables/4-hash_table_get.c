@@ -2,7 +2,7 @@
 /**
  *hash_table_get -  retrieves a value associated with a key.
  *@ht:  hash table pointer
- *@key: the key 
+ *@key: the key
  *Return:  associated value element, otherwise, NULL
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
