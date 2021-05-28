@@ -16,7 +16,7 @@ return (NULL);
 if (size == 0)
 return (NULL);
 h_tab->size = size;
-h_tab->array = malloc(sizeof(hash_node_t) * size);
+h_tab->array = malloc(sizeof(hash_node_t *) * size);
 if (h_tab->array == NULL)
 return (NULL);
 return (h_tab);
