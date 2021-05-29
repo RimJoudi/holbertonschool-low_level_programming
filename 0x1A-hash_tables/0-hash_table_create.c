@@ -2,7 +2,7 @@
 /**
  * hash_table_create - function that creates a hash table.
  * @size: unsigned long int, size of the array
- * Returns: a pointer to the newly created hash table,
+ * Return: a pointer to the newly created hash table,
  *		otherwise, NULL.
  */
 
