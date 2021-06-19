@@ -8,22 +8,22 @@ int main(void)
 {
 int i, j, l, k;
 
-for (i = 48; i <= 57; i++)
+for (i = 0; i <= 9; i++)
 {
-for (j = 48; j <= 56; j++)
+for (j = 0; j <= 9; j++)
 {
-for (l = 48; l <= 57; l++)
+for (l = 0; l <= 9; l++)
 {
-for (k = 49; k <= 57; k++)
+for (k = 0; k <= 9; k++)
 {
 if (i < l || (i == l && j < k))
 {
-putchar(i);
-putchar(j);
+putchar(i + '0');
+putchar(j + '0');
 putchar(' ');
-putchar(l);
-putchar(k);
-if (!(i == 57 && j == 56 && l == 57 && k == 57))
+putchar(l + '0');
+putchar(k + '0');
+if (!(i == 9 && j == 8 && l == 9 && k == 9))
 {
 putchar(',');
 putchar(' ');
