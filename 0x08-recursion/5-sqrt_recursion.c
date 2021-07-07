@@ -7,13 +7,13 @@
  */
 int _sqrt_func(int num, int i)
 {
-    if (num < 0)
-        return -1;
-    if (i > num)
-        return -1;
-    if (i * i == num)
-        return i;
-    return(_sqrt_func(num, i + 1));
+	if (num < 0)
+		return (-1);
+	if (i > num)
+		return (-1);
+	if (i * i == num)
+		return (i);
+	return (_sqrt_func(num, i + 1));
 }
 
 /**
@@ -22,6 +22,6 @@ int _sqrt_func(int num, int i)
  * Return: integer.
  */
 int _sqrt_recursion(int n)
-{   
-    return _sqrt_func(n, 1);
+{
+	return (_sqrt_func(n, 1));
 }
