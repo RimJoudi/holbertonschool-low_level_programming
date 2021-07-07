@@ -17,7 +17,7 @@ int _sqrt_func(int num, int i)
 }
 
 /**
- *_pow_recursion - returns the natural square root of a number.
+ * _sqrt_recursion - returns the natural square root of a number.
  *@n: integer.
  * Return: integer.
  */
