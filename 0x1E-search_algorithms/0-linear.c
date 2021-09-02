@@ -22,5 +22,6 @@ if (value == array[i])
 {
 return (i);
 }
+}
 return (-1);
 }
